@@ -9,8 +9,8 @@ Replace the Project Title
 ### This project is to learn about and apply knowledge on tracking and managing changes to software code.  
 Describe what your project is about and what it does
 
-### I used the README.md file to practice these steps. 
+### I used the README.md file to practice these steps.
 Include the files used
 
-### Credits
+### I consulted Coding Interview and Code Curry Carma on youtube to assist with this project. 
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.

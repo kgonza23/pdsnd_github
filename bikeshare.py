@@ -26,7 +26,7 @@ def get_filters():
         city = input('Please enter a city: "chicago, new york city, washington"').lower()
         print(city)
         if city in cities:
-            break 
+            break
         else :
             print ('Hmmm, something isnt quite right. Please enter a valid city')
 
@@ -35,13 +35,13 @@ def get_filters():
         month = input('Please enter all months or just one month from january to june').lower()
         print(month)
         if month in months :
-            break 
+            break
         else :
             print ('Hmmm, something isnt quite right. Please enter a different month')
 
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     while True:
-        day = input("Please enter day of the week or type all for all the days").lower() 
+        day = input("Please enter day of the week or type all for all the days").lower()
         print(day)
         if day in days_of_week :
             break
@@ -64,7 +64,7 @@ def load_data(city, month, day):
     df['Start Time'] = pd.to_datetime(df['Start Time']) # to convert the time to data
     df['month']=df['Start Time'].dt.month
     df['day_of_week']=df['Start Time'].dt.day_name()
-   #month 
+   #month
     if month != 'all':
         months = ['january','february','march','april','may','june']
         month = months.index(month) + 1
@@ -81,7 +81,7 @@ def time_stats(df,month):
     if df['month'].to_string() != month:
         popular_month = df['month'].mode()[0]
         print('Most Popular Start Month:', popular_month)
-    
+
     # TO DO: display the most common day of week
     popular_day = df['day_of_week'].mode()[0]
     print('Most Popular Weekday:', popular_day)
@@ -146,7 +146,7 @@ def user_stats(df):
     if 'Birth day' in df:
         earliest_year =int(df['Birth day'].min())
         print('\n Earliest Birth Year :\n ',earliest_year)
-   
+
 # find the most recent birth year
     if 'Birth day' in df:
         recent_year = int(df['Birth day'].max())
@@ -166,7 +166,7 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
-        
+
         i = 0
         raw = input("Would you like to see the first 5 rows of raw data? Type 'yes' or 'no'.\n").lower()
         pd.set_option('display.max_columns', 200)
@@ -182,3 +182,4 @@ def main():
 
 if __name__ == "__main__":
 	main()
+# Making change 1 to file 

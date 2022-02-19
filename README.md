@@ -9,7 +9,7 @@ Replace the Project Title
 ### This project is to learn about and apply knowledge on tracking and managing changes to software code.  
 Describe what your project is about and what it does
 
-### Files used
+### I used the README.md file to practice these steps. 
 Include the files used
 
 ### Credits

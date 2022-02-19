@@ -6,7 +6,7 @@ Include the date you created this project and README file.
 ### Project 3 - Learning Version Control in Github
 Replace the Project Title
 
-### Description
+### This project is to learn about and apply knowledge on tracking and managing changes to software code.  
 Describe what your project is about and what it does
 
 ### Files used
